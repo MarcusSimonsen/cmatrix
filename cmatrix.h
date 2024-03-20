@@ -1,6 +1,9 @@
+/* Copyright (C) 2024 Marcus Simonsen - All Rights Reserved
+ * Subject to the GNU General Public License
+ */
 #include <stddef.h>
-#ifndef CMATRIX
-#define CMATRIX
+#ifndef CMATRIX_H_
+#define CMATRIX_H_
 typedef struct {
   size_t rows;
   size_t cols;
@@ -21,4 +24,4 @@ cmatrix *cmatrix_mul(cmatrix *m1, cmatrix *m2);
 cmatrix *cmatrix_mul_scalar(cmatrix *m, double scalar);
 cmatrix *cmatrix_transpose(cmatrix *m);
 
-#endif
+#endif  // CMATRIX_H_
