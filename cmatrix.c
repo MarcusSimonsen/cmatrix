@@ -1,7 +1,11 @@
+/* Copyright (C) 2024 Marcus Simonsen - All Rights Reserved
+ * Subject to the GNU General Public License
+ */
 #include "cmatrix.h"
-#include <math.h>
-#include <stdio.h>
+
 #include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 
 cmatrix *cmatrix_zero(size_t rows, size_t cols) {
   double *data = malloc(rows * cols * sizeof(double));
